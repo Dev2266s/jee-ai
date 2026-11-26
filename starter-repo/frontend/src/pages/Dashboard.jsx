@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { useQuery } from '@tanstack/react-query'
-import { Chart, registerables, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, BarController, BarChart } from 'chart.js'
+import Chart from 'chart.js/auto'
 import 'chartjs-chart-matrix'
 import Loading, { CardSkeleton } from '../components/Loading'
 
