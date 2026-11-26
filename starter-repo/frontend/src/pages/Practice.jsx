@@ -38,7 +38,7 @@ const QUESTIONS = [
     options: [
       {id: "A", text: "$\\frac{2kqa}{(a^2+y^2)^{3/2}}"},
       {id: "B", text: "$\\frac{2kqy}{(a^2+y^2)^{3/2}}$"},
-      {id: "C", text": "$\\frac{kqy}{(a^2+y^2)^{3/2}}$"},
+      {id: "C", text: "$\\frac{kqy}{(a^2+y^2)^{3/2}}"},
       {id: "D", text: "$0$"}
     ],
     answer: "B",
