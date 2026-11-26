@@ -366,7 +366,7 @@ export default function Dashboard() {
         <div className="card p-4 bg-gradient-to-br from-slate-50 to-white">
           <div className="text-xs font-medium text-slate-500 uppercase tracking-wide">Mastery Velocity</div>
           <div className="text-3xl font-bold text-slate-900 mt-1">+0.18 θ/week</div>
-          <div className="text-xs text-slate-500 mt-1">Target: +0.25 θ/week for AIR < 5000</div>
+          <div className="text-xs text-slate-500 mt-1">Target: +0.25 θ/week for AIR &lt; 5000</div>
         </div>
       </div>
 
