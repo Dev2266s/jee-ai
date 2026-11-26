@@ -36,7 +36,7 @@ const QUESTIONS = [
     type: "MCQ_SINGLE",
     text: "Two identical point charges $q$ are placed at $x = -a$ and $x = +a$ on the x-axis. The electric field at a point on the y-axis at distance $y$ from origin is:",
     options: [
-      {id: "A", text": "$\\frac{2kqa}{(a^2+y^2)^{3/2}}$"},
+      {id: "A", text: "$\\frac{2kqa}{(a^2+y^2)^{3/2}}"},
       {id: "B", text: "$\\frac{2kqy}{(a^2+y^2)^{3/2}}$"},
       {id: "C", text": "$\\frac{kqy}{(a^2+y^2)^{3/2}}$"},
       {id: "D", text: "$0$"}
