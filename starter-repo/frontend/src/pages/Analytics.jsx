@@ -185,7 +185,7 @@ export default function Analytics() {
         <div className="card p-4">
           <div className="text-xs font-medium text-slate-500 uppercase tracking-wide">Percentile Estimate</div>
           <div className="text-3xl font-bold text-indigo-600 mt-1">97.2%</div>
-          <div className="text-xs text-slate-500 mt-1">Target: 99.5% for AIR < 5000</div>
+          <div className="text-xs text-slate-500 mt-1">Target: 99.5% for AIR &lt; 5000</div>
         </div>
         <div className="card p-4">
           <div className="text-xs font-medium text-slate-500 uppercase tracking-wide">Confidence Level</div>
