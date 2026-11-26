@@ -14,7 +14,7 @@ const QUESTIONS = [
       {id: "A", text: "$\\frac{q}{\\varepsilon_0}$"},
       {id: "B", text: "$\\frac{q}{6\\varepsilon_0}$"},
       {id: "C", text: "$\\frac{q}{3\\varepsilon_0}$"},
-      {id: "D", text": "$\\frac{q}{2\\varepsilon_0}$"}
+      {id: "D", text: "$\\frac{q}{2\\varepsilon_0}$"}
     ],
     answer: "B",
     hints: [
