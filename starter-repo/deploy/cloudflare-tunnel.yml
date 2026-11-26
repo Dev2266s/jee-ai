@@ -1,0 +1,21 @@
+# Cloudflare Tunnel Config — Exposes local Docker to internet FREE
+# 1. Install cloudflared: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/installation/
+# 2. Run: cloudflared tunnel --config deploy/cloudflare-tunnel.yml run
+# 3. Share the https://*.trycloudflare.com URL — works from any device
+
+tunnel: jee-ai-local
+credentials-file: ~/.cloudflared/jee-ai-local.json  # Auto-created on first run
+
+ingress:
+  - hostname: jee-ai.your-domain.com  # Optional: use your own domain later
+    service: http://localhost:3000    # Frontend
+    originRequest:
+      noTLSVerify: true
+  - hostname: api.jee-ai.your-domain.com
+    service: http://localhost:8000    # Backend API
+    originRequest:
+      noTLSVerify: true
+  - service: http_status:404          # Catch-all
+
+# Quick start (no domain — random URL each run):
+# cloudflared tunnel --url http://localhost:3000 --url http://localhost:8000

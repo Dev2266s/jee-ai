@@ -1,0 +1,32 @@
+# Railway Deploy Config — Free $5/mo credit, true cloud deployment
+# 1. Push this folder to GitHub
+# 2. Go to railway.app → New Project → Deploy from GitHub
+# 3. Add PostgreSQL plugin (free tier)
+# 4. Set environment variables below
+# 5. Auto-deploys on push — runs 24/7
+
+[build]
+builder = "nixpacks"
+
+[deploy]
+healthcheckPath = "/health"
+healthcheckTimeout = 100
+restartPolicyType = "on-failure"
+restartPolicyMaxRetries = 3
+
+# Environment variables (set in Railway dashboard)
+# DATABASE_URL = auto-provided by PostgreSQL plugin
+# REDIS_URL = auto-provided by Redis plugin (optional)
+# PYTHONPATH = /app
+# VITE_API_URL = https://your-app.railway.app (auto-set)
+
+[[services]]
+name = "backend"
+dockerfilePath = "backend/Dockerfile"
+rootDirectory = "starter-repo"
+
+[[services]]
+name = "frontend"
+dockerfilePath = "frontend/Dockerfile"
+rootDirectory = "starter-repo"
+# Frontend served as static files after build
