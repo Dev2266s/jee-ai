@@ -16,7 +16,7 @@
     "axios": "^1.6.0",
     "katex": "^0.16.9",
     "date-fns": "^2.30.0",
-    "zustand": "^4.4.0"
+    "zustand": "^4.4.0",
     "chartjs-chart-matrix": "^2.0.1"
   },
   "devDependencies": {
