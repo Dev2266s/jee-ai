@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { renderMathInElement } from 'katex'
+import { renderMathInElement } from 'katex/contrib/auto-render'
 import Loading from '../components/Loading'
 
 const QUESTIONS = [
